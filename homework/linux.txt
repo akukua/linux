@@ -1,0 +1,63 @@
+vboxuser@Linux:~/homework$ cat selected.txt commands.txt
+235 processes.txt
+root           1  0.0  0.3  23236 13936 ?        Ss   15:38   0:02 /sbin/init splash
+root         748  0.0  0.0  18092  2808 ?        Ss   15:38   0:00 /usr/sbin/cron -f -P
+syslog       769  0.0  0.1 222564  5692 ?        Ssl  15:38   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         818  0.0  0.4 345096 18828 ?        Ssl  15:38   0:01 /usr/sbin/NetworkManager --no-daemon
+root         824  0.0  0.1  17380  6176 ?        Ss   15:38   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root         848  0.0  0.3 318296 12492 ?        Ssl  15:38   0:00 /usr/sbin/ModemManager
+root        1022  0.0  0.2  46892 11832 ?        Ss   15:38   0:00 /usr/sbin/cupsd -l
+root        1025  0.0  0.5 120908 22548 ?        Ssl  15:38   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+kernoops    1041  0.0  0.0  12744  2400 ?        Ss   15:38   0:00 /usr/sbin/kerneloops --test
+kernoops    1044  0.0  0.0  12744  2376 ?        Ss   15:38   0:00 /usr/sbin/kerneloops
+root        1046  0.0  0.2 323484  9156 ?        Ssl  15:38   0:00 /usr/sbin/gdm3
+cups-br+    1056  0.0  0.4 268340 19564 ?        Ssl  15:38   0:00 /usr/sbin/cups-browsed
+vboxuser    1617  0.0  0.3 124468 14876 ?        S<sl 15:39   0:01 /usr/bin/pipewire
+vboxuser    1618  0.0  0.1 106404  5876 ?        Ssl  15:39   0:00 /usr/bin/pipewire -c filter-chain.conf
+vboxuser    1621  0.0  0.4 415568 18652 ?        S<sl 15:39   0:00 /usr/bin/wireplumber
+vboxuser    1622  0.0  0.4 130140 19572 ?        S<Lsl 15:39   0:00 /usr/bin/pipewire-pulse
+vboxuser    1625  0.0  0.2 325176 10108 ?        SLsl 15:39   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+vboxuser    1632  0.0  0.1  11012  6712 ?        Ss   15:39   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+vboxuser    1697  0.0  0.1 244336  5964 tty2     Ssl+ 15:39   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+vboxuser    1705  0.0  0.4 306876 16576 tty2     Sl+  15:39   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+vboxuser    1818  0.0  0.4 676588 17852 ?        Ssl  15:39   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+vboxuser    1853  4.9 11.6 5089972 467956 ?      Rsl  15:39  16:00 /usr/bin/gnome-shell
+vboxuser    1865  0.0  0.1   9476  4952 ?        S    15:39   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+vboxuser    1955  0.0  0.6 2532088 26596 ?       Sl   15:39   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+vboxuser    1981  0.0  0.3 397536 12376 ?        Ssl  15:39   0:04 /usr/bin/ibus-daemon --panel disable
+vboxuser    2330  0.0  0.3  39128 12192 ?        Ss   15:39   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+vboxuser    2427  0.0  0.6 2663068 27272 ?       Sl   15:39   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+vboxuser    2446  0.0  0.7 429612 30660 ?        Sl   15:39   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+vboxuser    2880  0.0  0.8 577384 32660 ?        Sl   15:40   0:00 /usr/bin/update-notifier
+vboxuser    4745  0.0  0.5 1313340 20420 ?       Sl   19:09   0:00 /usr/bin/snap userd
+vboxuser    6672  0.1  0.2 128556  9248 ?        Ssl  20:49   0:00 /usr/bin/speech-dispatcher -s -t 0
+  123  mkdir homework
+  124  cd homework
+  125  touch processes.txt
+  126  ps aux
+  127  ps aux > processes.txt
+  128  cp processes.txt copy.txt
+  129  mkdir backup
+  130  mv copy.txt backup/
+  131  pwd
+  132  back
+  133  -
+  134  ~
+  135  pwd
+  136  ~home
+  137  home~
+  138  cd home
+  139  /
+  140  cd -
+  141  mkdir backup1
+  142  mv copy.txt backup1/
+  143  rm backup1
+  144  rmdir backup1
+  145  cd homework
+  146  wc -l processes.txt
+  147  wc -l processes.txt > selected.txt
+  148  grep "bin" processes.txt
+  149  grep "bin" processes.txt >> selected.txt
+  150  history
+  151  history | tail -n 123 > commands.txt
+  152  history | tail -n 30 > commands.txt
